@@ -1,4 +1,5 @@
-SELECT date_created,
+SELECT 
+date_created,
 customer_name, 
 product_name, 
 volume
