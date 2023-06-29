@@ -11,7 +11,7 @@ CREATE TABLE addresses (
     -- id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL
     id SERIAL PRIMARY KEY, -- Postgresql
     street VARCHAR(300) NOT NULL,
-    house_numer VARCHAR(50) NOT NULL,
+    house_number VARCHAR(50) NOT NULL,
     city_id INT NOT NULL
 );
 
