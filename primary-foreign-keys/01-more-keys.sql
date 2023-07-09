@@ -1,4 +1,4 @@
- CREATE TABLE projects (
+CREATE TABLE projects (
     id SERIAL PRIMARY KEY, -- Postgresql
     title VARCHAR(300) NOT NULL,
     deadline DATE
@@ -39,6 +39,6 @@ CREATE TABLE projects_employees (
     project_id INT REFERENCES projects ON DELETE CASCADE,
     PRIMARY KEY (employee_id, project_id),
     -- PRIMARY KEY (id) ...
-    FOREIGN KEY employee_id REFERENCES employees ON DELETE CASCADE,
+    FOREIGN KEY (employee_id) REFERENCES employees ON DELETE CASCADE
     -- FOREIGN KEY (employee_id, project_id) REFERENCES employees ON DELETE ...
 );
