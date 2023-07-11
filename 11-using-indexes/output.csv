@@ -1,4 +1,4 @@
 "EXPLAIN"
-"-> Filter: (users.salary > 12000)  (cost=0.85 rows=2) (actual time=0.0435..0.0481 rows=3 loops=1)
-    -> Table scan on users  (cost=0.85 rows=6) (actual time=0.0394..0.0443 rows=6 loops=1)
+"-> Filter: ((addresses.city = 'Munich') and (addresses.street = 'Teststreet'))  (cost=0.85 rows=1) (actual time=0.0445..0.0524 rows=3 loops=1)
+    -> Table scan on addresses  (cost=0.85 rows=6) (actual time=0.0404..0.0457 rows=6 loops=1)
 "
